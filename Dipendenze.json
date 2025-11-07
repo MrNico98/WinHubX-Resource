@@ -1,0 +1,102 @@
+{
+    "Form1": {
+        "updateInfoUrl": "https://raw.githubusercontent.com/MrNico98/WinHubX/refs/heads/main/update.json"
+    },
+    "AttivatoreOffice": {
+        "primaryURL": "https://raw.githubusercontent.com/MrNico98/WinHubX-Resource/refs/heads/main/Ohook_Activation_AIO.cmd"
+    },
+    "PacMan": {
+        "DownloadFile": "https://github.com/MrNico98/pacman/archive/refs/heads/main.zip"
+    },
+    "Dialog": {
+        "WimToolkit": "https://raw.githubusercontent.com/MrNico98/WIMToolkit/refs/heads/main/WIMtoolkitDowload.ps1",
+        "managersetupmicrosoft": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/microsoft-pc-manager-3-14-9-0.msixbundle",
+        "RufusLite": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/Rufus4Lite.exe",
+        "DriverRST": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/DriverRST.zip"   
+    }, 
+    "FormWin": {
+        "attivatorewin": "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/refs/heads/master/MAS/Separate-Files-Version/Activators/HWID_Activation.cmd",
+        "cambiowin": "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/refs/heads/master/MAS/Separate-Files-Version/Change_Windows_Edition.cmd"
+    },
+    "CreaISOWIN": {
+        "creaiso": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/RisorseCreaISO.zip"
+    },
+    "PersonaTastoDestro": {
+        "PersoTastoDestro": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/PersoTastoDestro.zip"
+    },
+    "OfficeHashes": {
+    "IT": {
+        "Sha256Office2019": "6b50ee7f4eccd87126a0ee1aa42c814773f85cb28d0603e1afd1b56ed00bf6fc",
+        "Sha256Office2021": "1f0a36b7996840ce8022e4a98fe058cac05a5bb172dcc5d1bac6c7f386823a88",
+        "Sha256Office2024": "2ef0ee897892060b27da35b1e64ccc3efc22dc7b6ed03905a33ab4a672eb851e",
+        "Sha256Office365": "118bd1de6ae7b017886f72c5198e0265f8823fbaa621a979f40e8449e60838e6"
+     },
+    "EN": {
+        "Sha256Office2019": "INSERISCI_HASH_EN_2019",
+        "Sha256Office2021": "INSERISCI_HASH_EN_2021",
+        "Sha256Office2024": "INSERISCI_HASH_EN_2024",
+        "Sha256Office365": "INSERISCI_HASH_EN_365"
+     }
+    },
+    "Office2019": {
+    "IT": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&platform=x64&language=it-it&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&platform=x86&language=it-it&version=O16GA",
+        "Offline2019": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/it-it/ProPlus2019Retail.img"
+      },
+    "EN": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&platform=x64&language=en-us&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&platform=x86&language=en-us&version=O16GA",
+        "Offline2019": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2019Retail.img"
+      }
+    },
+    "Office2021": {
+    "IT": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2021Retail&platform=x64&language=it-it&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2021Retail&platform=x86&language=it-it&version=O16GA",
+        "Offline2021": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/it-it/ProPlus2021Retail.img"
+      },
+    "EN": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2021Retail&platform=x64&language=en-us&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2021Retail&platform=x86&language=en-us&version=O16GA",
+        "Offline2021": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img"
+      }
+    },
+    "Office2024": {
+    "IT": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x64&language=it-it&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x86&language=it-it&version=O16GA",
+        "Offline2024": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/it-it/ProPlus2024Retail.img"
+      },
+    "EN": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x64&language=en-us&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x86&language=en-us&version=O16GA",
+        "Offline2024": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2024Retail.img"
+      }
+    },
+    "Office365": {
+    "IT": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=it-it&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x86&language=it-it&version=O16GA",
+        "Offline365": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/it-it/O365ProPlusRetail.img"
+      },
+    "EN": {
+        "Officex64": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=en-us&version=O16GA",
+        "Officex32": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x86&language=en-us&version=O16GA",
+        "Offline365": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/O365ProPlusRetail.img"
+      }
+    },
+    "FormOffice": {
+    "scrubber": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/OfficeScrubber.zip"
+    }, 
+    "WSA": {
+        "win11x64": "https://github.com/MrNico98/pacman/releases/download/WSA/WSAwin11x64.zip",
+        "win11arm64": "https://github.com/MrNico98/pacman/releases/download/WSA/WSAwin11arm64.zip",
+        "win10x64": "https://github.com/MrNico98/pacman/releases/download/WSA/WSAwin10x64.zip"
+    },
+    "Defnot": {
+        "DefNotx64": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/x64.zip",
+        "DefNotx86": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/x86.zip",
+        "DefNotarm": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/ARM64.zip"          
+    }   
+}
