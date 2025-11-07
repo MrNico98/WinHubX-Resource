@@ -1,7 +1,8 @@
 {
-    "Form1": {
-        "updateInfoUrl": "https://raw.githubusercontent.com/MrNico98/WinHubX/refs/heads/main/update.json"
-    },
+"Form1": {
+  "updateInfoUrl": {
+    "primaryURL": "https://raw.githubusercontent.com/MrNico98/WinHubX/refs/heads/main/update.json"
+  },
     "AttivatoreOffice": {
         "primaryURL": "https://raw.githubusercontent.com/MrNico98/WinHubX-Resource/refs/heads/main/Ohook_Activation_AIO.cmd"
     },
@@ -99,4 +100,5 @@
         "DefNotx86": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/x86.zip",
         "DefNotarm": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/ARM64.zip"          
     }   
+
 }
