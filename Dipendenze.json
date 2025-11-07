@@ -1,8 +1,7 @@
 {
-"Form1": {
-  "updateInfoUrl": {
-    "primaryURL": "https://raw.githubusercontent.com/MrNico98/WinHubX/refs/heads/main/update.json"
-  },
+    "Form1": {
+        "updateInfoUrl": "https://raw.githubusercontent.com/MrNico98/WinHubX/refs/heads/main/update.json"
+    },
     "AttivatoreOffice": {
         "primaryURL": "https://raw.githubusercontent.com/MrNico98/WinHubX-Resource/refs/heads/main/Ohook_Activation_AIO.cmd"
     },
@@ -24,20 +23,6 @@
     },
     "PersonaTastoDestro": {
         "PersoTastoDestro": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/PersoTastoDestro.zip"
-    },
-    "OfficeHashes": {
-    "IT": {
-        "Sha256Office2019": "6b50ee7f4eccd87126a0ee1aa42c814773f85cb28d0603e1afd1b56ed00bf6fc",
-        "Sha256Office2021": "1f0a36b7996840ce8022e4a98fe058cac05a5bb172dcc5d1bac6c7f386823a88",
-        "Sha256Office2024": "2ef0ee897892060b27da35b1e64ccc3efc22dc7b6ed03905a33ab4a672eb851e",
-        "Sha256Office365": "118bd1de6ae7b017886f72c5198e0265f8823fbaa621a979f40e8449e60838e6"
-     },
-    "EN": {
-        "Sha256Office2019": "INSERISCI_HASH_EN_2019",
-        "Sha256Office2021": "INSERISCI_HASH_EN_2021",
-        "Sha256Office2024": "INSERISCI_HASH_EN_2024",
-        "Sha256Office365": "INSERISCI_HASH_EN_365"
-     }
     },
     "Office2019": {
     "IT": {
@@ -100,5 +85,4 @@
         "DefNotx86": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/x86.zip",
         "DefNotarm": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/ARM64.zip"          
     }   
-
 }
