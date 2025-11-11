@@ -3,7 +3,7 @@
         "updateInfoUrl": "https://raw.githubusercontent.com/MrNico98/WinHubX/refs/heads/main/update.json"
     },
     "AttivatoreOffice": {
-        "primaryURL": "https://raw.githubusercontent.com/MrNico98/WinHubX-Resource/refs/heads/main/Ohook_Activation_AIO.cmd"
+        "primaryURL": "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/refs/heads/master/MAS/Separate-Files-Version/Activators/Ohook_Activation_AIO.cmd"
     },
     "PacMan": {
         "DownloadFile": "https://github.com/MrNico98/pacman/archive/refs/heads/main.zip"
@@ -86,3 +86,4 @@
         "DefNotarm": "https://github.com/MrNico98/WinHubX-Resource/releases/download/WinHubX-Risorse/ARM64.zip"          
     }   
 }
+
