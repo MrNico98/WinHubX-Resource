@@ -336,11 +336,6 @@
       "Description": "Gestione licenze ed esecuzione software protetto."
     },
     {
-      "Name": "SNMPTRAP",
-      "StartupType": "Manual",
-      "Description": "Notifica trap SNMP di rete."
-    },
-    {
       "Name": "SNMPTrap",
       "StartupType": "Manual",
       "Description": "Alias per SNMPTRAP, notifiche rete."
