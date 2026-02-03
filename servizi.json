@@ -1,8 +1,804 @@
 {
   "service": [
     {
-      "Name": "AJRouter",
-      "Suggested": "Manuale" 
+      "Name": "ALG",
+      "StartupType": "Manual",
+      "Description": "Servizio Application Layer Gateway, gestisce NAT e protocolli speciali per firewall/router."
+    },
+    {
+      "Name": "AppMgmt",
+      "StartupType": "Manual",
+      "Description": "Gestione applicazioni legacy installate tramite Windows Installer."
+    },
+    {
+      "Name": "AppReadiness",
+      "StartupType": "Manual",
+      "Description": "Prepara le app quando un utente accede al sistema o aggiorna Windows."
+    },
+    {
+      "Name": "AppVClient",
+      "StartupType": "Disabled",
+      "Description": "Servizio Client App-V, gestisce applicazioni virtualizzate (può restare disabilitato se non usi App-V)."
+    },
+    {
+      "Name": "Appinfo",
+      "StartupType": "Manual",
+      "Description": "Fornisce informazioni sulle applicazioni e permette l’elevazione privilegiata tramite UAC."
+    },
+    {
+      "Name": "AssignedAccessManagerSvc",
+      "StartupType": "Disabled",
+      "Description": "Gestisce l'accesso assegnato (kiosk mode), inutile se non usi questa funzione."
+    },
+    {
+      "Name": "AxInstSV",
+      "StartupType": "Manual",
+      "Description": "Servizio ActiveX Installer, installa controlli ActiveX richiesti dalle app."
+    },
+    {
+      "Name": "BDESVC",
+      "StartupType": "Manual",
+      "Description": "Gestione BitLocker, crittografia unità disco."
+    },
+    {
+      "Name": "BITS",
+      "StartupType": "AutomaticDelayedStart",
+      "Description": "Servizio trasferimento intelligente in background, usato per aggiornamenti e download in background."
+    },
+    {
+      "Name": "BTAGService",
+      "StartupType": "Manual",
+      "Description": "Servizio per l’integrazione dei giochi Xbox su PC."
+    },
+    {
+      "Name": "CDPSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio Connected Devices Platform, gestisce dispositivi connessi (smartphone, IoT)."
+    },
+    {
+      "Name": "COMSysApp",
+      "StartupType": "Manual",
+      "Description": "Gestisce applicazioni COM basate su server."
+    },
+    {
+      "Name": "CertPropSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio Propagazione certificati, aggiorna certificati utente e computer."
+    },
+    {
+      "Name": "CscService",
+      "StartupType": "Manual",
+      "Description": "Servizio file offline, gestisce la cache dei file di rete offline."
+    },
+    {
+      "Name": "DevQueryBroker",
+      "StartupType": "Manual",
+      "Description": "Servizio broker query dispositivi, comunica con device moderni."
+    },
+    {
+      "Name": "DeviceAssociationService",
+      "StartupType": "Manual",
+      "Description": "Associa e gestisce dispositivi e accessori collegati."
+    },
+    {
+      "Name": "DeviceInstall",
+      "StartupType": "Manual",
+      "Description": "Gestione installazione driver e dispositivi."
+    },
+    {
+      "Name": "DiagTrack",
+      "StartupType": "Disabled",
+      "Description": "Servizio telemetria diagnostica di Windows (può restare disabilitato)."
+    },
+    {
+      "Name": "DialogBlockingService",
+      "StartupType": "Disabled",
+      "Description": "Blocco dialoghi di sicurezza automatici, può restare disabilitato."
+    },
+    {
+      "Name": "DisplayEnhancementService",
+      "StartupType": "Manual",
+      "Description": "Migliora qualità video e grafica su display compatibili."
+    },
+    {
+      "Name": "EFS",
+      "StartupType": "Manual",
+      "Description": "Servizio Encrypting File System, gestisce file crittografati."
+    },
+    {
+      "Name": "EapHost",
+      "StartupType": "Manual",
+      "Description": "Gestione autenticazioni di rete (EAP – Extensible Authentication Protocol)."
+    },
+    {
+      "Name": "FDResPub",
+      "StartupType": "Manual",
+      "Description": "Pubblica risorse condivise sulla rete locale (file e stampanti)."
+    },
+    {
+      "Name": "FrameServer",
+      "StartupType": "Manual",
+      "Description": "Servizio interno di Windows per gestione video e immagini in streaming."
+    },
+    {
+      "Name": "FrameServerMonitor",
+      "StartupType": "Manual",
+      "Description": "Monitoraggio e gestione dei frame video del FrameServer."
+    },
+    {
+      "Name": "GraphicsPerfSvc",
+      "StartupType": "Manual",
+      "Description": "Ottimizzazione prestazioni grafiche su sistemi compatibili."
+    },
+    {
+      "Name": "HvHost",
+      "StartupType": "Manual",
+      "Description": "Servizio Hyper-V host, necessario per macchine virtuali."
+    },
+    {
+      "Name": "IKEEXT",
+      "StartupType": "Manual",
+      "Description": "Gestisce protocolli VPN IPsec/IKE per connessioni sicure."
+    },
+    {
+      "Name": "InstallService",
+      "StartupType": "Manual",
+      "Description": "Servizio Windows Installer, installa o rimuove software MSI."
+    },
+    {
+      "Name": "InventorySvc",
+      "StartupType": "Manual",
+      "Description": "Inventario applicazioni e dispositivi per Windows Store e telemetria."
+    },
+    {
+      "Name": "IpxlatCfgSvc",
+      "StartupType": "Manual",
+      "Description": "Transizione IPv6-IPv4 per reti miste."
+    },
+    {
+      "Name": "KtmRm",
+      "StartupType": "Manual",
+      "Description": "Gestione transazioni distribuite (Microsoft Kernel Transaction Manager)."
+    },
+    {
+      "Name": "LicenseManager",
+      "StartupType": "Manual",
+      "Description": "Gestione licenze software e attivazione Windows."
+    },
+    {
+      "Name": "LxpSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio di supporto layout e input linguistici."
+    },
+    {
+      "Name": "MSDTC",
+      "StartupType": "Manual",
+      "Description": "Microsoft Distributed Transaction Coordinator, gestisce transazioni distribuite tra database."
+    },
+    {
+      "Name": "MSiSCSI",
+      "StartupType": "Manual",
+      "Description": "Gestione connessioni iSCSI per storage remoto."
+    },
+    {
+      "Name": "MapsBroker",
+      "StartupType": "AutomaticDelayedStart",
+      "Description": "Servizio Mappe Windows, gestisce dati e caching mappe."
+    },
+    {
+      "Name": "McpManagementService",
+      "StartupType": "Manual",
+      "Description": "Gestione certificati per connettività Microsoft e autenticazioni."
+    },
+    {
+      "Name": "MicrosoftEdgeElevationService",
+      "StartupType": "Manual",
+      "Description": "Supporta l’elevazione privilegi di Microsoft Edge."
+    },
+    {
+      "Name": "NaturalAuthentication",
+      "StartupType": "Manual",
+      "Description": "Autenticazione biometrica e Windows Hello."
+    },
+    {
+      "Name": "NcaSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio Network Connectivity Assistant, verifica connessione internet."
+    },
+    {
+      "Name": "NcbService",
+      "StartupType": "Manual",
+      "Description": "Servizio correlato alla rete e notifiche Windows."
+    },
+    {
+      "Name": "NcdAutoSetup",
+      "StartupType": "Manual",
+      "Description": "Configurazione automatica connessioni di rete."
+    },
+    {
+      "Name": "NetSetupSvc",
+      "StartupType": "Manual",
+      "Description": "Supporto configurazione rete e domini."
+    },
+    {
+      "Name": "NetTcpPortSharing",
+      "StartupType": "Disabled",
+      "Description": "Condivisione porte TCP per servizi WCF, può restare disabilitato se non usi applicazioni avanzate."
+    },
+    {
+      "Name": "Netman",
+      "StartupType": "Manual",
+      "Description": "Gestione connessioni di rete (Network Connections)."
+    },
+    {
+      "Name": "NlaSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio rilevamento rete, determina stato rete e profili."
+    },
+    {
+      "Name": "PcaSvc",
+      "StartupType": "Manual",
+      "Description": "Program Compatibility Assistant, segnala problemi compatibilità app."
+    },
+    {
+      "Name": "PeerDistSvc",
+      "StartupType": "Manual",
+      "Description": "Distribuzione contenuti peer-to-peer (Windows Update e Store)."
+    },
+    {
+      "Name": "PerfHost",
+      "StartupType": "Manual",
+      "Description": "Raccoglie metriche prestazioni per Performance Monitor."
+    },
+    {
+      "Name": "PhoneSvc",
+      "StartupType": "Manual",
+      "Description": "Gestione telefoni e connettività mobile."
+    },
+    {
+      "Name": "PlugPlay",
+      "StartupType": "Manual",
+      "Description": "Rilevamento e gestione dispositivi hardware."
+    },
+    {
+      "Name": "PolicyAgent",
+      "StartupType": "Manual",
+      "Description": "IPsec Policy Agent, gestisce policy di sicurezza di rete."
+    },
+    {
+      "Name": "PrintNotify",
+      "StartupType": "Manual",
+      "Description": "Notifiche per dispositivi di stampa."
+    },
+    {
+      "Name": "PushToInstall",
+      "StartupType": "Manual",
+      "Description": "Installa app da remoto via Windows Store o amministratore."
+    },
+    {
+      "Name": "QWAVE",
+      "StartupType": "Manual",
+      "Description": "Quality Windows Audio Video Experience, ottimizza streaming multimediale."
+    },
+    {
+      "Name": "RasAuto",
+      "StartupType": "Manual",
+      "Description": "Connessioni remote automatiche (VPN, dial-up)."
+    },
+    {
+      "Name": "RasMan",
+      "StartupType": "Manual",
+      "Description": "Servizio accesso remoto e VPN."
+    },
+    {
+      "Name": "RemoteAccess",
+      "StartupType": "Disabled",
+      "Description": "Routing e Accesso remoto, disabilitabile se non usi VPN/DirectAccess."
+    },
+    {
+      "Name": "RemoteRegistry",
+      "StartupType": "Disabled",
+      "Description": "Consente la modifica del registro da remoto, disabilitabile per sicurezza."
+    },
+    {
+      "Name": "RetailDemo",
+      "StartupType": "Manual",
+      "Description": "Servizio demo per negozi, inutile su PC personali."
+    },
+    {
+      "Name": "RmSvc",
+      "StartupType": "Manual",
+      "Description": "Resource Metering Service, misura uso risorse."
+    },
+    {
+      "Name": "RpcLocator",
+      "StartupType": "Manual",
+      "Description": "Servizio RPC Locator, per comunicazioni remote COM."
+    },
+    {
+      "Name": "SCPolicySvc",
+      "StartupType": "Manual",
+      "Description": "Smart Card Device Enumeration Policy."
+    },
+    {
+      "Name": "SCardSvr",
+      "StartupType": "Manual",
+      "Description": "Smart Card, gestisce lettori e card virtuali."
+    },
+    {
+      "Name": "SDRSVC",
+      "StartupType": "Manual",
+      "Description": "Servizio Ripristino Sistema e Backup."
+    },
+    {
+      "Name": "SEMgrSvc",
+      "StartupType": "Manual",
+      "Description": "Gestione licenze ed esecuzione software protetto."
+    },
+    {
+      "Name": "SNMPTRAP",
+      "StartupType": "Manual",
+      "Description": "Notifica trap SNMP di rete."
+    },
+    {
+      "Name": "SNMPTrap",
+      "StartupType": "Manual",
+      "Description": "Alias per SNMPTRAP, notifiche rete."
+    },
+    {
+      "Name": "SSDPSRV",
+      "StartupType": "Manual",
+      "Description": "Servizio UPnP Device Host, scopre dispositivi sulla rete locale."
+    },
+    {
+      "Name": "ScDeviceEnum",
+      "StartupType": "Manual",
+      "Description": "Enumerazione dispositivi Smart Card."
+    },
+    {
+      "Name": "SensorDataService",
+      "StartupType": "Manual",
+      "Description": "Raccoglie dati dai sensori hardware (accelerometro, GPS)."
+    },
+    {
+      "Name": "SensorService",
+      "StartupType": "Manual",
+      "Description": "Gestione sensori e dati sensoriali di sistema."
+    },
+    {
+      "Name": "SensrSvc",
+      "StartupType": "Manual",
+      "Description": "Alias sensori, supporta Windows Location e app basate su sensori."
+    },
+    {
+      "Name": "SessionEnv",
+      "StartupType": "Manual",
+      "Description": "Gestione sessioni utente Remote Desktop e terminal server."
+    },
+    {
+      "Name": "SharedAccess",
+      "StartupType": "Manual",
+      "Description": "Internet Connection Sharing e NAT per rete locale."
+    },
+    {
+      "Name": "SmsRouter",
+      "StartupType": "Manual",
+      "Description": "Servizio gestione messaggi SMS per dispositivi collegati."
+    },
+    {
+      "Name": "SstpSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio Secure Socket Tunneling Protocol, per VPN SSTP."
+    },
+    {
+      "Name": "StiSvc",
+      "StartupType": "Manual",
+      "Description": "Scanner and Camera Wizard, gestione periferiche imaging."
+    },
+    {
+      "Name": "StorSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio storage, gestione disco e storage pool."
+    },
+    {
+      "Name": "TapiSrv",
+      "StartupType": "Manual",
+      "Description": "Telephony API, gestione telefoni e modem legacy."
+    },
+    {
+      "Name": "TieringEngineService",
+      "StartupType": "Manual",
+      "Description": "Gestione dati e tiering per dispositivi storage ibridi."
+    },
+    {
+      "Name": "TokenBroker",
+      "StartupType": "Manual",
+      "Description": "Gestione token di autenticazione app e servizi cloud."
+    },
+    {
+      "Name": "TroubleshootingSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio risoluzione problemi di Windows."
+    },
+    {
+      "Name": "TrustedInstaller",
+      "StartupType": "Manual",
+      "Description": "Windows Modules Installer, permette installazione/aggiornamento componenti Windows."
+    },
+    {
+      "Name": "UevAgentService",
+      "StartupType": "Disabled",
+      "Description": "User Experience Virtualization, sincronizzazione impostazioni utente (non necessaria su PC singolo)."
+    },
+    {
+      "Name": "UmRdpService",
+      "StartupType": "Manual",
+      "Description": "Servizio Desktop remoto universale."
+    },
+    {
+      "Name": "UsoSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio aggiornamenti Windows Update Orchestrator."
+    },
+    {
+      "Name": "VSS",
+      "StartupType": "Manual",
+      "Description": "Volume Shadow Copy, crea snapshot di backup."
+    },
+    {
+      "Name": "W32Time",
+      "StartupType": "Manual",
+      "Description": "Servizio sincronizzazione orologio di Windows."
+    },
+    {
+      "Name": "WEPHOSTSVC",
+      "StartupType": "Manual",
+      "Description": "Servizio Windows Connect Now, gestione configurazioni Wi-Fi."
+    },
+    {
+      "Name": "WFDSConMgrSvc",
+      "StartupType": "Manual",
+      "Description": "Gestione connessioni Windows Fax e Scan."
+    },
+    {
+      "Name": "WMPNetworkSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio condivisione media Windows Media Player."
+    },
+    {
+      "Name": "WManSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio gestione Mobile Device/Work Folders."
+    },
+    {
+      "Name": "WPDBusEnum",
+      "StartupType": "Manual",
+      "Description": "Servizio enumerazione dispositivi portatili."
+    },
+    {
+      "Name": "WSearch",
+      "StartupType": "AutomaticDelayedStart",
+      "Description": "Servizio indicizzazione e ricerca file."
+    },
+    {
+      "Name": "WalletService",
+      "StartupType": "Manual",
+      "Description": "Servizio gestione portafoglio digitale Windows."
+    },
+    {
+      "Name": "WarpJITSvc",
+      "StartupType": "Manual",
+      "Description": "Servizio compilazione JIT per applicazioni compatibili .NET."
+    },
+    {
+      "Name": "WbioSrvc",
+      "StartupType": "Manual",
+      "Description": "Windows Biometric Service, gestisce impronte digitali e sensori biometrici."
+    },
+    {
+      "Name": "WdiServiceHost",
+      "StartupType": "Manual",
+      "Description": "Diagnostic Host Service, raccoglie dati diagnostici di sistema."
+    },
+    {
+      "Name": "WdiSystemHost",
+      "StartupType": "Manual",
+      "Description": "Servizio diagnostica avanzata Windows."
+    },
+    {
+      "Name": "WebClient",
+      "StartupType": "Manual",
+      "Description": "Servizio WebDAV per accesso a file remoti via HTTP/HTTPS."
+    },
+    {
+      "Name": "Wecsvc",
+      "StartupType": "Manual",
+      "Description": "Servizio eventi Windows, raccolta e log eventi."
+    },
+    {
+      "Name": "WerSvc",
+      "StartupType": "Manual",
+      "Description": "Segnalazione errori Windows e invio crash report a Microsoft."
+    },
+    {
+      "Name": "WiaRpc",
+      "StartupType": "Manual",
+      "Description": "Supporto scanner e fotocamere (Windows Image Acquisition)."
+    },
+    {
+      "Name": "WinRM",
+      "StartupType": "Manual",
+      "Description": "Gestione remota Windows via PowerShell/HTTP (amministrazione remota)."
+    },
+    {
+      "Name": "WpcMonSvc",
+      "StartupType": "Manual",
+      "Description": "Controllo parentale e monitoraggio attività famiglia."
+    },
+    {
+      "Name": "WpnService",
+      "StartupType": "Manual",
+      "Description": "Gestisce notifiche push per app e sistema."
+    },
+    {
+      "Name": "XblAuthManager",
+      "StartupType": "Manual",
+      "Description": "Autenticazione account Xbox Live per giochi Microsoft Store."
+    },
+    {
+      "Name": "XblGameSave",
+      "StartupType": "Manual",
+      "Description": "Salvataggi cloud Xbox Live."
+    },
+    {
+      "Name": "XboxGipSvc",
+      "StartupType": "Manual",
+      "Description": "Supporto driver controller Xbox e periferiche gaming."
+    },
+    {
+      "Name": "XboxNetApiSvc",
+      "StartupType": "Manual",
+      "Description": "Servizi di rete Xbox Live per multiplayer e servizi online."
+    },
+    {
+      "Name": "autotimesvc",
+      "StartupType": "Manual",
+      "Description": "Aggiorna automaticamente fuso orario in base alla posizione."
+    },
+    {
+      "Name": "bthserv",
+      "StartupType": "Manual",
+      "Description": "Gestione dispositivi Bluetooth."
+    },
+    {
+      "Name": "camsvc",
+      "StartupType": "Manual",
+      "Description": "Gestisce autorizzazioni e accesso alla webcam."
+    },
+    {
+      "Name": "cloudidsvc",
+      "StartupType": "Manual",
+      "Description": "Supporta autenticazione cloud e identità Microsoft."
+    },
+    {
+      "Name": "dcsvc",
+      "StartupType": "Manual",
+      "Description": "Servizio di configurazione dispositivi e componenti moderni Windows."
+    },
+    {
+      "Name": "defragsvc",
+      "StartupType": "Manual",
+      "Description": "Ottimizzazione e deframmentazione dischi (TRIM per SSD)."
+    },
+    {
+      "Name": "diagsvc",
+      "StartupType": "Manual",
+      "Description": "Servizi diagnostica generale e raccolta dati errori."
+    },
+    {
+      "Name": "dmwappushservice",
+      "StartupType": "Manual",
+      "Description": "Servizio push WAP/MDM per gestione dispositivi e telemetria."
+    },
+    {
+      "Name": "dot3svc",
+      "StartupType": "Manual",
+      "Description": "Autenticazione 802.1X per reti cablate aziendali."
+    },
+    {
+      "Name": "edgeupdate",
+      "StartupType": "Manual",
+      "Description": "Aggiornamenti automatici Microsoft Edge."
+    },
+    {
+      "Name": "edgeupdatem",
+      "StartupType": "Manual",
+      "Description": "Componente di manutenzione aggiornamenti Edge."
+    },
+    {
+      "Name": "fdPHost",
+      "StartupType": "Manual",
+      "Description": "Host pubblicazione dispositivi per rilevamento in rete locale."
+    },
+    {
+      "Name": "fhsvc",
+      "StartupType": "Manual",
+      "Description": "Cronologia file (backup automatico documenti)."
+    },
+    {
+      "Name": "hidserv",
+      "StartupType": "Manual",
+      "Description": "Supporto dispositivi di input avanzati (tasti multimediali, penne, ecc.)."
+    },
+    {
+      "Name": "icssvc",
+      "StartupType": "Manual",
+      "Description": "Hotspot mobile e condivisione connessione Internet."
+    },
+    {
+      "Name": "lfsvc",
+      "StartupType": "Manual",
+      "Description": "Servizio geolocalizzazione del dispositivo."
+    },
+    {
+      "Name": "lltdsvc",
+      "StartupType": "Manual",
+      "Description": "Mappatura topologia rete locale (Network Map)."
+    },
+    {
+      "Name": "lmhosts",
+      "StartupType": "Manual",
+      "Description": "Supporto risoluzione nomi NetBIOS legacy."
+    },
+    {
+      "Name": "netprofm",
+      "StartupType": "Manual",
+      "Description": "Gestisce profili di rete e stato connessione Internet."
+    },
+    {
+      "Name": "perceptionsimulation",
+      "StartupType": "Manual",
+      "Description": "Simulazione sensori per Mixed Reality e sviluppo AR/VR."
+    },
+    {
+      "Name": "pla",
+      "StartupType": "Manual",
+      "Description": "Raccolta log e contatori prestazioni (Performance Logs & Alerts)."
+    },
+    {
+      "Name": "seclogon",
+      "StartupType": "Manual",
+      "Description": "Esegue programmi con credenziali diverse (Esegui come amministratore)."
+    },
+    {
+      "Name": "shpamsvc",
+      "StartupType": "Disabled",
+      "Description": "Servizio protezione account Shared PC/educational. Non utile su PC domestici."
+    },
+    {
+      "Name": "smphost",
+      "StartupType": "Manual",
+      "Description": "Supporto Simple Management Protocol legacy."
+    },
+    {
+      "Name": "ssh-agent",
+      "StartupType": "Disabled",
+      "Description": "Memorizza chiavi SSH per autenticazione automatica (utile solo per sviluppo/server)."
+    },
+        {
+      "Name": "svsvc",
+      "StartupType": "Manual",
+      "Description": "Servizio per smart card virtuali (Virtual Smart Card)."
+    },
+    {
+      "Name": "swprv",
+      "StartupType": "Manual",
+      "Description": "Provider di crittografia software per operazioni sicure."
+    },
+    {
+      "Name": "tzautoupdate",
+      "StartupType": "Disabled",
+      "Description": "Aggiornamento automatico fuso orario (può restare disabilitato se non viaggi)."
+    },
+    {
+      "Name": "upnphost",
+      "StartupType": "Manual",
+      "Description": "Gestisce dispositivi UPnP in rete locale (stampanti, media, smart home)."
+    },
+    {
+      "Name": "vds",
+      "StartupType": "Manual",
+      "Description": "Gestione dischi, volumi e storage (Virtual Disk Service)."
+    },
+    {
+      "Name": "vmicguestinterface",
+      "StartupType": "Manual",
+      "Description": "Interfaccia di comunicazione tra host e macchine virtuali Hyper-V."
+    },
+    {
+      "Name": "vmicheartbeat",
+      "StartupType": "Manual",
+      "Description": "Monitora lo stato della VM per l’host Hyper-V."
+    },
+    {
+      "Name": "vmickvpexchange",
+      "StartupType": "Manual",
+      "Description": "Interscambio dati tra host e VM (Hyper-V Key-Value)."
+    },
+    {
+      "Name": "vmicrdv",
+      "StartupType": "Manual",
+      "Description": "Supporto Desktop remoto per VM Hyper-V."
+    },
+    {
+      "Name": "vmicshutdown",
+      "StartupType": "Manual",
+      "Description": "Permette all’host di spegnere correttamente la VM."
+    },
+    {
+      "Name": "vmictimesync",
+      "StartupType": "Manual",
+      "Description": "Sincronizza orologio della VM con l’host Hyper-V."
+    },
+    {
+      "Name": "vmicvmsession",
+      "StartupType": "Manual",
+      "Description": "Gestisce sessioni di VM tra host e guest Hyper-V."
+    },
+    {
+      "Name": "vmicvss",
+      "StartupType": "Manual",
+      "Description": "Supporta snapshot e backup coerenti delle VM Hyper-V."
+    },
+    {
+      "Name": "wbengine",
+      "StartupType": "Manual",
+      "Description": "Windows Backup Engine, gestisce backup e ripristini di sistema."
+    },
+    {
+      "Name": "wcncsvc",
+      "StartupType": "Manual",
+      "Description": "Servizio reti wireless ad hoc (Wi-Fi Direct)."
+    },
+    {
+      "Name": "webthreatdefsvc",
+      "StartupType": "Manual",
+      "Description": "Aggiornamenti definizioni sicurezza web (SmartScreen/Defender)."
+    },
+    {
+      "Name": "wercplsupport",
+      "StartupType": "Manual",
+      "Description": "Supporto crash report (interfaccia pannello di controllo)."
+    },
+    {
+      "Name": "wisvc",
+      "StartupType": "Manual",
+      "Description": "Servizio di intelligenza Windows per analisi comportamenti e telemetria."
+    },
+    {
+      "Name": "wlidsvc",
+      "StartupType": "Manual",
+      "Description": "Account Microsoft e login cloud."
+    },
+    {
+      "Name": "wlpasvc",
+      "StartupType": "Manual",
+      "Description": "Accesso e licenze Windows Store/Apps."
+    },
+    {
+      "Name": "wmiApSrv",
+      "StartupType": "Manual",
+      "Description": "Supporto provider WMI per gestione hardware e software."
+    },
+    {
+      "Name": "workfolderssvc",
+      "StartupType": "Manual",
+      "Description": "Sincronizzazione Work Folders per aziende (file cloud locale)."
+    },
+    {
+      "Name": "wuauserv",
+      "StartupType": "Manual",
+      "Description": "Windows Update, scarica e installa aggiornamenti sistema."
     }
-  ]
+]
 }
