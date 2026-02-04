@@ -52,8 +52,8 @@
     },
     {
       "Name": "CDPSvc",
-      "StartupType": "Manual",
-      "Description": "Servizio Connected Devices Platform, gestisce dispositivi connessi (smartphone, IoT)."
+      "StartupType": "Disabled",
+      "Description": "Diagnostic Policy Service, rileva e risolve problemi di rete e sistema."
     },
     {
       "Name": "COMSysApp",
@@ -302,7 +302,7 @@
     },
     {
       "Name": "RetailDemo",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Servizio demo per negozi, inutile su PC personali."
     },
     {
@@ -317,12 +317,12 @@
     },
     {
       "Name": "SCPolicySvc",
-      "StartupType": "Manual",
-      "Description": "Smart Card Device Enumeration Policy."
+      "StartupType": "Disabled",
+      "Description": "Gestisce criteri di configurazione smart card."
     },
     {
       "Name": "SCardSvr",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Smart Card, gestisce lettori e card virtuali."
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "Name": "ScDeviceEnum",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Enumerazione dispositivi Smart Card."
     },
     {
@@ -372,8 +372,8 @@
     },
     {
       "Name": "SharedAccess",
-      "StartupType": "Manual",
-      "Description": "Internet Connection Sharing e NAT per rete locale."
+      "StartupType": "Disabled",
+      "Description": "Servizio di condivisione connessione Internet (ICS) e firewall legacy."
     },
     {
       "Name": "SmsRouter",
@@ -457,7 +457,7 @@
     },
     {
       "Name": "WMPNetworkSvc",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Servizio condivisione media Windows Media Player."
     },
     {
@@ -477,7 +477,7 @@
     },
     {
       "Name": "WalletService",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Servizio gestione portafoglio digitale Windows."
     },
     {
@@ -486,19 +486,19 @@
       "Description": "Servizio compilazione JIT per applicazioni compatibili .NET."
     },
     {
-      "Name": "WbioSrvc",
+      "Name": "Disabled",
       "StartupType": "Manual",
       "Description": "Windows Biometric Service, gestisce impronte digitali e sensori biometrici."
     },
     {
       "Name": "WdiServiceHost",
-      "StartupType": "Manual",
-      "Description": "Diagnostic Host Service, raccoglie dati diagnostici di sistema."
+      "StartupType": "Disabled",
+      "Description": "Host servizi di diagnostica, raccoglie dati diagnostici di sistema."
     },
     {
       "Name": "WdiSystemHost",
-      "StartupType": "Manual",
-      "Description": "Servizio diagnostica avanzata Windows."
+      "StartupType": "Disabled",
+      "Description": "Host di diagnostica di sistema Windows."
     },
     {
       "Name": "WebClient",
@@ -512,7 +512,7 @@
     },
     {
       "Name": "WerSvc",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Segnalazione errori Windows e invio crash report a Microsoft."
     },
     {
@@ -527,7 +527,7 @@
     },
     {
       "Name": "WpcMonSvc",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Controllo parentale e monitoraggio attività famiglia."
     },
     {
@@ -537,12 +537,12 @@
     },
     {
       "Name": "XblAuthManager",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Autenticazione account Xbox Live per giochi Microsoft Store."
     },
     {
       "Name": "XblGameSave",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Salvataggi cloud Xbox Live."
     },
     {
@@ -552,8 +552,8 @@
     },
     {
       "Name": "XboxNetApiSvc",
-      "StartupType": "Manual",
-      "Description": "Servizi di rete Xbox Live per multiplayer e servizi online."
+      "StartupType": "Disabled",
+      "Description": "Servizi di rete per funzionalità multiplayer Xbox Live."
     },
     {
       "Name": "autotimesvc",
@@ -587,13 +587,13 @@
     },
     {
       "Name": "diagsvc",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Servizi diagnostica generale e raccolta dati errori."
     },
     {
       "Name": "dmwappushservice",
-      "StartupType": "Manual",
-      "Description": "Servizio push WAP/MDM per gestione dispositivi e telemetria."
+      "StartupType": "Disabled",
+      "Description": "Gestisce messaggi push WAP e funzioni di telemetria mobile."
     },
     {
       "Name": "dot3svc",
@@ -632,7 +632,7 @@
     },
     {
       "Name": "lfsvc",
-      "StartupType": "Manual",
+      "StartupType": "Disabled",
       "Description": "Servizio geolocalizzazione del dispositivo."
     },
     {
@@ -794,6 +794,36 @@
       "Name": "wuauserv",
       "StartupType": "Manual",
       "Description": "Windows Update, scarica e installa aggiornamenti sistema."
+    },
+    {
+    "Name": "diagnosticshub.standardcollector.service",
+    "StartupType": "Disabled",
+    "Description": "Servizio di raccolta diagnostica usato per telemetria e debug di sistema."
+    },
+    {
+    "Name": "TrkWks",
+    "StartupType": "Disabled",
+    "Description": "Tiene traccia dei collegamenti ai file NTFS spostati in rete."
+    },
+    {
+    "Name": "ndu",
+    "StartupType": "Disabled",
+    "Description": "Monitora l'utilizzo della rete per diagnostica e statistiche."
+    },
+    {
+    "Name": "MixedRealityOpenXRSvc",
+    "StartupType": "Disabled",
+    "Description": "Supporto per dispositivi Mixed Reality e OpenXR."
+    },
+    {
+    "Name": "SysMain",
+    "StartupType": "Disabled",
+    "Description": "Ottimizza il caricamento delle app (ex Superfetch), può causare uso elevato del disco su SSD."
+    },
+    {
+    "Name": "*diagnosticshub*",
+    "StartupType": "Disabled",
+    "Description": "Servizi diagnostici generici legati a raccolta dati e debugging."
     }
-]
+  ]
 }
