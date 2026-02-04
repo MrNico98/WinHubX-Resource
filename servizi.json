@@ -182,7 +182,7 @@
     },
     {
       "Name": "MapsBroker",
-      "StartupType": "AutomaticDelayedStart",
+      "StartupType": "Disabled",
       "Description": "Servizio Mappe Windows, gestisce dati e caching mappe."
     },
     {
