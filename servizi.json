@@ -796,11 +796,6 @@
       "Description": "Windows Update, scarica e installa aggiornamenti sistema."
     },
     {
-    "Name": "diagnosticshub.standardcollector.service",
-    "StartupType": "Disabled",
-    "Description": "Servizio di raccolta diagnostica usato per telemetria e debug di sistema."
-    },
-    {
     "Name": "TrkWks",
     "StartupType": "Disabled",
     "Description": "Tiene traccia dei collegamenti ai file NTFS spostati in rete."
@@ -821,7 +816,7 @@
     "Description": "Ottimizza il caricamento delle app (ex Superfetch), può causare uso elevato del disco su SSD."
     },
     {
-    "Name": "*diagnosticshub*",
+    "Name": "Diagnostica",
     "StartupType": "Disabled",
     "Description": "Servizi diagnostici generici legati a raccolta dati e debugging."
     }
