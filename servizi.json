@@ -3,822 +3,1130 @@
     {
       "Name": "ALG",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Application Layer Gateway, gestisce NAT e protocolli speciali per firewall/router."
     },
     {
       "Name": "AppMgmt",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione applicazioni legacy installate tramite Windows Installer."
     },
     {
       "Name": "AppReadiness",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Prepara le app quando un utente accede al sistema o aggiorna Windows."
     },
     {
       "Name": "AppVClient",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Servizio Client App-V, gestisce applicazioni virtualizzate (può restare disabilitato se non usi App-V)."
     },
     {
       "Name": "Appinfo",
       "StartupType": "Manual",
-      "Description": "Fornisce informazioni sulle applicazioni e permette l’elevazione privilegiata tramite UAC."
+      "Task": [],
+      "Description": "Fornisce informazioni sulle applicazioni e permette l'elevazione privilegiata tramite UAC."
     },
     {
       "Name": "AssignedAccessManagerSvc",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Gestisce l'accesso assegnato (kiosk mode), inutile se non usi questa funzione."
     },
     {
       "Name": "AxInstSV",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio ActiveX Installer, installa controlli ActiveX richiesti dalle app."
     },
     {
       "Name": "BDESVC",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione BitLocker, crittografia unità disco."
     },
     {
       "Name": "BITS",
       "StartupType": "AutomaticDelayedStart",
+      "Task": [],
       "Description": "Servizio trasferimento intelligente in background, usato per aggiornamenti e download in background."
     },
     {
       "Name": "BTAGService",
       "StartupType": "Manual",
-      "Description": "Servizio per l’integrazione dei giochi Xbox su PC."
+      "Task": [],
+      "Description": "Servizio per l'integrazione dei giochi Xbox su PC."
     },
     {
       "Name": "CDPSvc",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Diagnostic Policy Service, rileva e risolve problemi di rete e sistema."
     },
     {
       "Name": "COMSysApp",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce applicazioni COM basate su server."
     },
     {
       "Name": "CertPropSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Propagazione certificati, aggiorna certificati utente e computer."
     },
     {
       "Name": "CscService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio file offline, gestisce la cache dei file di rete offline."
     },
     {
       "Name": "DevQueryBroker",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio broker query dispositivi, comunica con device moderni."
     },
     {
       "Name": "DeviceAssociationService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Associa e gestisce dispositivi e accessori collegati."
     },
     {
       "Name": "DeviceInstall",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione installazione driver e dispositivi."
     },
     {
       "Name": "DiagTrack",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser",
+        "\\Microsoft\\Windows\\Application Experience\\ProgramDataUpdater",
+        "\\Microsoft\\Windows\\Application Experience\\StartupAppTask",
+        "\\Microsoft\\Windows\\Application Experience\\PcaPatchDbTask",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\KernelCeipTask",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip",
+        "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClient",
+        "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClientOnScenarioDownload",
+        "\\Microsoft\\Windows\\Shell\\FamilySafetyMonitor"
+      ],
       "Description": "Servizio telemetria diagnostica di Windows (può restare disabilitato)."
     },
     {
       "Name": "DialogBlockingService",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Blocco dialoghi di sicurezza automatici, può restare disabilitato."
     },
     {
       "Name": "DisplayEnhancementService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Migliora qualità video e grafica su display compatibili."
     },
     {
       "Name": "EFS",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Encrypting File System, gestisce file crittografati."
     },
     {
       "Name": "EapHost",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione autenticazioni di rete (EAP – Extensible Authentication Protocol)."
     },
     {
       "Name": "FDResPub",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Pubblica risorse condivise sulla rete locale (file e stampanti)."
     },
     {
       "Name": "FrameServer",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio interno di Windows per gestione video e immagini in streaming."
     },
     {
       "Name": "FrameServerMonitor",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Monitoraggio e gestione dei frame video del FrameServer."
     },
     {
       "Name": "GraphicsPerfSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Ottimizzazione prestazioni grafiche su sistemi compatibili."
     },
     {
       "Name": "HvHost",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Hyper-V host, necessario per macchine virtuali."
     },
     {
       "Name": "IKEEXT",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce protocolli VPN IPsec/IKE per connessioni sicure."
     },
     {
       "Name": "InstallService",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\InstallService\\UpdateTask"
+      ],
       "Description": "Servizio Windows Installer, installa o rimuove software MSI."
     },
     {
       "Name": "InventorySvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Inventario applicazioni e dispositivi per Windows Store e telemetria."
     },
     {
       "Name": "IpxlatCfgSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Transizione IPv6-IPv4 per reti miste."
     },
     {
       "Name": "KtmRm",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione transazioni distribuite (Microsoft Kernel Transaction Manager)."
     },
     {
       "Name": "LicenseManager",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione licenze software e attivazione Windows."
     },
     {
       "Name": "LxpSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio di supporto layout e input linguistici."
     },
     {
       "Name": "MSDTC",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Microsoft Distributed Transaction Coordinator, gestisce transazioni distribuite tra database."
     },
     {
       "Name": "MSiSCSI",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione connessioni iSCSI per storage remoto."
     },
     {
       "Name": "MapsBroker",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Maps\\MapsToastTask",
+        "\\Microsoft\\Windows\\Maps\\MapsUpdateTask"
+      ],
       "Description": "Servizio Mappe Windows, gestisce dati e caching mappe."
     },
     {
       "Name": "McpManagementService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione certificati per connettività Microsoft e autenticazioni."
     },
     {
       "Name": "MicrosoftEdgeElevationService",
       "StartupType": "Manual",
-      "Description": "Supporta l’elevazione privilegi di Microsoft Edge."
+      "Task": [
+        "\\Microsoft\\Windows\\MicrosoftEdge\\UpdateTask"
+      ],
+      "Description": "Supporta l'elevazione privilegi di Microsoft Edge."
     },
     {
       "Name": "NaturalAuthentication",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Autenticazione biometrica e Windows Hello."
     },
     {
       "Name": "NcaSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Network Connectivity Assistant, verifica connessione internet."
     },
     {
       "Name": "NcbService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio correlato alla rete e notifiche Windows."
     },
     {
       "Name": "NcdAutoSetup",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Configurazione automatica connessioni di rete."
     },
     {
       "Name": "NetSetupSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto configurazione rete e domini."
     },
     {
       "Name": "NetTcpPortSharing",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Condivisione porte TCP per servizi WCF, può restare disabilitato se non usi applicazioni avanzate."
     },
     {
       "Name": "Netman",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione connessioni di rete (Network Connections)."
     },
     {
       "Name": "NlaSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio rilevamento rete, determina stato rete e profili."
     },
     {
       "Name": "PcaSvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\Application Experience\\PcaPatchDbTask"
+      ],
       "Description": "Program Compatibility Assistant, segnala problemi compatibilità app."
     },
     {
       "Name": "PeerDistSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Distribuzione contenuti peer-to-peer (Windows Update e Store)."
     },
     {
       "Name": "PerfHost",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Raccoglie metriche prestazioni per Performance Monitor."
     },
     {
       "Name": "PhoneSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione telefoni e connettività mobile."
     },
     {
       "Name": "PlugPlay",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Rilevamento e gestione dispositivi hardware."
     },
     {
       "Name": "PolicyAgent",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "IPsec Policy Agent, gestisce policy di sicurezza di rete."
     },
     {
       "Name": "PrintNotify",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Notifiche per dispositivi di stampa."
     },
     {
       "Name": "PushToInstall",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\PushToInstall\\Registration"
+      ],
       "Description": "Installa app da remoto via Windows Store o amministratore."
     },
     {
       "Name": "QWAVE",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Quality Windows Audio Video Experience, ottimizza streaming multimediale."
     },
     {
       "Name": "RasAuto",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Connessioni remote automatiche (VPN, dial-up)."
     },
     {
       "Name": "RasMan",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio accesso remoto e VPN."
     },
     {
       "Name": "RemoteAccess",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Routing e Accesso remoto, disabilitabile se non usi VPN/DirectAccess."
     },
     {
       "Name": "RemoteRegistry",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Consente la modifica del registro da remoto, disabilitabile per sicurezza."
     },
     {
       "Name": "RetailDemo",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\RetailDemo\\CleanupOfflineContent"
+      ],
       "Description": "Servizio demo per negozi, inutile su PC personali."
     },
     {
       "Name": "RmSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Resource Metering Service, misura uso risorse."
     },
     {
       "Name": "RpcLocator",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio RPC Locator, per comunicazioni remote COM."
     },
     {
       "Name": "SCPolicySvc",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Gestisce criteri di configurazione smart card."
     },
     {
       "Name": "SCardSvr",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Smart Card, gestisce lettori e card virtuali."
     },
     {
       "Name": "SDRSVC",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Ripristino Sistema e Backup."
     },
     {
       "Name": "SEMgrSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione licenze ed esecuzione software protetto."
     },
     {
       "Name": "SNMPTrap",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Alias per SNMPTRAP, notifiche rete."
     },
     {
       "Name": "SSDPSRV",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio UPnP Device Host, scopre dispositivi sulla rete locale."
     },
     {
       "Name": "ScDeviceEnum",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Enumerazione dispositivi Smart Card."
     },
     {
       "Name": "SensorDataService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Raccoglie dati dai sensori hardware (accelerometro, GPS)."
     },
     {
       "Name": "SensorService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione sensori e dati sensoriali di sistema."
     },
     {
       "Name": "SensrSvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\Location\\Notifications"
+      ],
       "Description": "Alias sensori, supporta Windows Location e app basate su sensori."
     },
     {
       "Name": "SessionEnv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione sessioni utente Remote Desktop e terminal server."
     },
     {
       "Name": "SharedAccess",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Servizio di condivisione connessione Internet (ICS) e firewall legacy."
     },
     {
       "Name": "SmsRouter",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio gestione messaggi SMS per dispositivi collegati."
     },
     {
       "Name": "SstpSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Secure Socket Tunneling Protocol, per VPN SSTP."
     },
     {
       "Name": "StiSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Scanner and Camera Wizard, gestione periferiche imaging."
     },
     {
       "Name": "StorSvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticDataCollector",
+        "\\Microsoft\\Windows\\Defrag\\ScheduledDefrag"
+      ],
       "Description": "Servizio storage, gestione disco e storage pool."
     },
     {
       "Name": "TapiSrv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Telephony API, gestione telefoni e modem legacy."
     },
     {
       "Name": "TieringEngineService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione dati e tiering per dispositivi storage ibridi."
     },
     {
       "Name": "TokenBroker",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione token di autenticazione app e servizi cloud."
     },
     {
       "Name": "TroubleshootingSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio risoluzione problemi di Windows."
     },
     {
       "Name": "TrustedInstaller",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Windows Modules Installer, permette installazione/aggiornamento componenti Windows."
     },
     {
       "Name": "UevAgentService",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "User Experience Virtualization, sincronizzazione impostazioni utente (non necessaria su PC singolo)."
     },
     {
       "Name": "UmRdpService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Desktop remoto universale."
     },
     {
       "Name": "UsoSvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\USO_UxBroker",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\Reboot",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\ScheduleScan",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\EdgeUpdate"
+      ],
       "Description": "Servizio aggiornamenti Windows Update Orchestrator."
     },
     {
       "Name": "VSS",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Volume Shadow Copy, crea snapshot di backup."
     },
     {
       "Name": "W32Time",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio sincronizzazione orologio di Windows."
     },
     {
       "Name": "WEPHOSTSVC",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio Windows Connect Now, gestione configurazioni Wi-Fi."
     },
     {
       "Name": "WFDSConMgrSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione connessioni Windows Fax e Scan."
     },
     {
       "Name": "WMPNetworkSvc",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Servizio condivisione media Windows Media Player."
     },
     {
       "Name": "WManSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio gestione Mobile Device/Work Folders."
     },
     {
       "Name": "WPDBusEnum",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio enumerazione dispositivi portatili."
     },
     {
       "Name": "WSearch",
       "StartupType": "AutomaticDelayedStart",
+      "Task": [],
       "Description": "Servizio indicizzazione e ricerca file."
     },
     {
       "Name": "WalletService",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Servizio gestione portafoglio digitale Windows."
     },
     {
       "Name": "WarpJITSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio compilazione JIT per applicazioni compatibili .NET."
     },
     {
-      "Name": "Disabled",
-      "StartupType": "Manual",
+      "Name": "WbioSrvc",
+      "StartupType": "Disabled",
+      "Task": [],
       "Description": "Windows Biometric Service, gestisce impronte digitali e sensori biometrici."
     },
     {
       "Name": "WdiServiceHost",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\Upload",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\UploadReadiness",
+        "\\Microsoft\\Windows\\WER\\ReportQueue",
+        "\\Microsoft\\Windows\\WER\\ReportArchive",
+        "\\Microsoft\\Windows\\WindowsErrorReporting\\QueueReporting"
+      ],
       "Description": "Host servizi di diagnostica, raccoglie dati diagnostici di sistema."
     },
     {
       "Name": "WdiSystemHost",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Diagnostic\\Scheduled"
+      ],
       "Description": "Host di diagnostica di sistema Windows."
     },
     {
       "Name": "WebClient",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio WebDAV per accesso a file remoti via HTTP/HTTPS."
     },
     {
       "Name": "Wecsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio eventi Windows, raccolta e log eventi."
     },
     {
       "Name": "WerSvc",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\Upload",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\UploadReadiness",
+        "\\Microsoft\\Windows\\WER\\ReportQueue",
+        "\\Microsoft\\Windows\\WER\\ReportArchive",
+        "\\Microsoft\\Windows\\WindowsErrorReporting\\QueueReporting"
+      ],
       "Description": "Segnalazione errori Windows e invio crash report a Microsoft."
     },
     {
       "Name": "WiaRpc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto scanner e fotocamere (Windows Image Acquisition)."
     },
     {
       "Name": "WinRM",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione remota Windows via PowerShell/HTTP (amministrazione remota)."
     },
     {
       "Name": "WpcMonSvc",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Controllo parentale e monitoraggio attività famiglia."
     },
     {
       "Name": "WpnService",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce notifiche push per app e sistema."
     },
     {
       "Name": "XblAuthManager",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Xbox\\XboxNetApiSvc",
+        "\\Microsoft\\XboxGameCallableUI\\BackgroundTask",
+        "\\Microsoft\\XboxGameCallableUI\\NetworkTask"
+      ],
       "Description": "Autenticazione account Xbox Live per giochi Microsoft Store."
     },
     {
       "Name": "XblGameSave",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\XblGameSave\\XblGameSaveTask"
+      ],
       "Description": "Salvataggi cloud Xbox Live."
     },
     {
       "Name": "XboxGipSvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto driver controller Xbox e periferiche gaming."
     },
     {
       "Name": "XboxNetApiSvc",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Xbox\\XboxNetApiSvc"
+      ],
       "Description": "Servizi di rete per funzionalità multiplayer Xbox Live."
     },
     {
       "Name": "autotimesvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Aggiorna automaticamente fuso orario in base alla posizione."
     },
     {
       "Name": "bthserv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione dispositivi Bluetooth."
     },
     {
       "Name": "camsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce autorizzazioni e accesso alla webcam."
     },
     {
       "Name": "cloudidsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporta autenticazione cloud e identità Microsoft."
     },
     {
       "Name": "dcsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio di configurazione dispositivi e componenti moderni Windows."
     },
     {
       "Name": "defragsvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\Defrag\\ScheduledDefrag"
+      ],
       "Description": "Ottimizzazione e deframmentazione dischi (TRIM per SSD)."
     },
     {
       "Name": "diagsvc",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Diagnostic\\Scheduled"
+      ],
       "Description": "Servizi diagnostica generale e raccolta dati errori."
     },
     {
       "Name": "dmwappushservice",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Gestisce messaggi push WAP e funzioni di telemetria mobile."
     },
     {
       "Name": "dot3svc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Autenticazione 802.1X per reti cablate aziendali."
     },
     {
       "Name": "edgeupdate",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\EdgeUpdate",
+        "\\Microsoft\\Windows\\MicrosoftEdge\\UpdateTask"
+      ],
       "Description": "Aggiornamenti automatici Microsoft Edge."
     },
     {
       "Name": "edgeupdatem",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Componente di manutenzione aggiornamenti Edge."
     },
     {
       "Name": "fdPHost",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Host pubblicazione dispositivi per rilevamento in rete locale."
     },
     {
       "Name": "fhsvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\FileHistory\\FileHistory*"
+      ],
       "Description": "Cronologia file (backup automatico documenti)."
     },
     {
       "Name": "hidserv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto dispositivi di input avanzati (tasti multimediali, penne, ecc.)."
     },
     {
       "Name": "icssvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Hotspot mobile e condivisione connessione Internet."
     },
     {
       "Name": "lfsvc",
       "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Location\\Notifications"
+      ],
       "Description": "Servizio geolocalizzazione del dispositivo."
     },
     {
       "Name": "lltdsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Mappatura topologia rete locale (Network Map)."
     },
     {
       "Name": "lmhosts",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto risoluzione nomi NetBIOS legacy."
     },
     {
       "Name": "netprofm",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce profili di rete e stato connessione Internet."
     },
     {
       "Name": "perceptionsimulation",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Simulazione sensori per Mixed Reality e sviluppo AR/VR."
     },
     {
       "Name": "pla",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Raccolta log e contatori prestazioni (Performance Logs & Alerts)."
     },
     {
       "Name": "seclogon",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Esegue programmi con credenziali diverse (Esegui come amministratore)."
     },
     {
       "Name": "shpamsvc",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Servizio protezione account Shared PC/educational. Non utile su PC domestici."
     },
     {
       "Name": "smphost",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto Simple Management Protocol legacy."
     },
     {
       "Name": "ssh-agent",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Memorizza chiavi SSH per autenticazione automatica (utile solo per sviluppo/server)."
     },
-        {
+    {
       "Name": "svsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio per smart card virtuali (Virtual Smart Card)."
     },
     {
       "Name": "swprv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Provider di crittografia software per operazioni sicure."
     },
     {
       "Name": "tzautoupdate",
       "StartupType": "Disabled",
+      "Task": [],
       "Description": "Aggiornamento automatico fuso orario (può restare disabilitato se non viaggi)."
     },
     {
       "Name": "upnphost",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce dispositivi UPnP in rete locale (stampanti, media, smart home)."
     },
     {
       "Name": "vds",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestione dischi, volumi e storage (Virtual Disk Service)."
     },
     {
       "Name": "vmicguestinterface",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Interfaccia di comunicazione tra host e macchine virtuali Hyper-V."
     },
     {
       "Name": "vmicheartbeat",
       "StartupType": "Manual",
-      "Description": "Monitora lo stato della VM per l’host Hyper-V."
+      "Task": [],
+      "Description": "Monitora lo stato della VM per l'host Hyper-V."
     },
     {
       "Name": "vmickvpexchange",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Interscambio dati tra host e VM (Hyper-V Key-Value)."
     },
     {
       "Name": "vmicrdv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto Desktop remoto per VM Hyper-V."
     },
     {
       "Name": "vmicshutdown",
       "StartupType": "Manual",
-      "Description": "Permette all’host di spegnere correttamente la VM."
+      "Task": [],
+      "Description": "Permette all'host di spegnere correttamente la VM."
     },
     {
       "Name": "vmictimesync",
       "StartupType": "Manual",
-      "Description": "Sincronizza orologio della VM con l’host Hyper-V."
+      "Task": [],
+      "Description": "Sincronizza orologio della VM con l'host Hyper-V."
     },
     {
       "Name": "vmicvmsession",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Gestisce sessioni di VM tra host e guest Hyper-V."
     },
     {
       "Name": "vmicvss",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporta snapshot e backup coerenti delle VM Hyper-V."
     },
     {
       "Name": "wbengine",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Windows Backup Engine, gestisce backup e ripristini di sistema."
     },
     {
       "Name": "wcncsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Servizio reti wireless ad hoc (Wi-Fi Direct)."
     },
     {
       "Name": "webthreatdefsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Aggiornamenti definizioni sicurezza web (SmartScreen/Defender)."
     },
     {
       "Name": "wercplsupport",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto crash report (interfaccia pannello di controllo)."
     },
     {
       "Name": "wisvc",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\KernelCeipTask",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip"
+      ],
       "Description": "Servizio di intelligenza Windows per analisi comportamenti e telemetria."
     },
     {
       "Name": "wlidsvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Account Microsoft e login cloud."
     },
     {
       "Name": "wlpasvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Accesso e licenze Windows Store/Apps."
     },
     {
       "Name": "wmiApSrv",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Supporto provider WMI per gestione hardware e software."
     },
     {
       "Name": "workfolderssvc",
       "StartupType": "Manual",
+      "Task": [],
       "Description": "Sincronizzazione Work Folders per aziende (file cloud locale)."
     },
     {
       "Name": "wuauserv",
       "StartupType": "Manual",
+      "Task": [
+        "\\Microsoft\\Windows\\WindowsUpdate\\ScheduledStart"
+      ],
       "Description": "Windows Update, scarica e installa aggiornamenti sistema."
     },
     {
-    "Name": "TrkWks",
-    "StartupType": "Disabled",
-    "Description": "Tiene traccia dei collegamenti ai file NTFS spostati in rete."
+      "Name": "TrkWks",
+      "StartupType": "Disabled",
+      "Task": [],
+      "Description": "Tiene traccia dei collegamenti ai file NTFS spostati in rete."
     },
     {
-    "Name": "ndu",
-    "StartupType": "Disabled",
-    "Description": "Monitora l'utilizzo della rete per diagnostica e statistiche."
+      "Name": "ndu",
+      "StartupType": "Disabled",
+      "Task": [],
+      "Description": "Monitora l'utilizzo della rete per diagnostica e statistiche."
     },
     {
-    "Name": "MixedRealityOpenXRSvc",
-    "StartupType": "Disabled",
-    "Description": "Supporto per dispositivi Mixed Reality e OpenXR."
+      "Name": "MixedRealityOpenXRSvc",
+      "StartupType": "Disabled",
+      "Task": [],
+      "Description": "Supporto per dispositivi Mixed Reality e OpenXR."
     },
     {
-    "Name": "SysMain",
-    "StartupType": "Disabled",
-    "Description": "Ottimizza il caricamento delle app (ex Superfetch), può causare uso elevato del disco su SSD."
+      "Name": "SysMain",
+      "StartupType": "Disabled",
+      "Task": [],
+      "Description": "Ottimizza il caricamento delle app (ex Superfetch), può causare uso elevato del disco su SSD."
     },
     {
-    "Name": "Diagnostica",
-    "StartupType": "Disabled",
-    "Description": "Servizi diagnostici generici legati a raccolta dati e debugging."
+      "Name": "Diagnostica",
+      "StartupType": "Disabled",
+      "Task": [
+        "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser",
+        "\\Microsoft\\Windows\\Application Experience\\ProgramDataUpdater",
+        "\\Microsoft\\Windows\\Application Experience\\StartupAppTask",
+        "\\Microsoft\\Windows\\Application Experience\\PcaPatchDbTask",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\KernelCeipTask",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip",
+        "\\Microsoft\\Windows\\Diagnostic\\Scheduled",
+        "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClient",
+        "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClientOnScenarioDownload",
+        "\\Microsoft\\Windows\\Shell\\FamilySafetyMonitor",
+        "\\Microsoft\\Windows\\WindowsUpdate\\ScheduledStart",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\USO_UxBroker",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\Reboot",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\ScheduleScan",
+        "\\Microsoft\\Windows\\CloudExperienceHost\\WelcomeExperience",
+        "\\Microsoft\\Windows\\Shell\\ExperienceHost\\StartupTask",
+        "\\Microsoft\\Windows\\StartMenuExperienceHost\\StartupTask",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\Upload",
+        "\\Microsoft\\Windows\\Windows Error Reporting\\UploadReadiness",
+        "\\Microsoft\\Windows\\WER\\ReportQueue",
+        "\\Microsoft\\Windows\\WER\\ReportArchive",
+        "\\Microsoft\\Windows\\UpdateOrchestrator\\EdgeUpdate",
+        "\\Microsoft\\Windows\\MicrosoftEdge\\UpdateTask",
+        "\\Microsoft\\Windows\\InstallService\\UpdateTask",
+        "\\Microsoft\\XblGameSave\\XblGameSaveTask",
+        "\\Microsoft\\Xbox\\XboxNetApiSvc",
+        "\\Microsoft\\XboxGameCallableUI\\BackgroundTask",
+        "\\Microsoft\\XboxGameCallableUI\\NetworkTask",
+        "\\Microsoft\\Office\\OfficeClickToRunService",
+        "\\Microsoft\\Office\\OfficeTelemetryAgentLogOn",
+        "\\Microsoft\\Office\\OfficeTelemetryAgentFallBack",
+        "\\Microsoft\\SkyDrive\\SkyDriveUpdateTask",
+        "\\Microsoft\\Windows\\Autochk\\Proxy",
+        "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticDataCollector",
+        "\\Microsoft\\Windows\\ApplicationData\\CleanupTemporaryState",
+        "\\Microsoft\\Windows\\ApplicationData\\DsSvcCleanup",
+        "\\Microsoft\\Windows\\AppxDeploymentClient\\Pre-stagedappcleanup",
+        "\\Microsoft\\Windows\\BrokerInfrastructure\\BgTaskRegistrationMaintenanceTask",
+        "\\Microsoft\\Windows\\capabilityaccessmanager\\maintenancetasks",
+        "\\Microsoft\\Windows\\Chkdsk\\ProactiveScan",
+        "\\Microsoft\\Windows\\Chkdsk\\SyspartRepair",
+        "\\Microsoft\\Windows\\Clip\\LicenseValidation",
+        "\\Microsoft\\Windows\\CloudExperienceHost\\CreateObjectTask",
+        "\\Microsoft\\Windows\\Defrag\\ScheduledDefrag",
+        "\\Microsoft\\Windows\\DeviceInformation\\Device",
+        "\\Microsoft\\Windows\\DeviceInformation\\DeviceUser",
+        "\\Microsoft\\Windows\\DeviceSetup\\MetadataRefresh",
+        "\\Microsoft\\Windows\\ExploitGuard\\ExploitGuardMDMpolicyRefresh",
+        "\\Microsoft\\Windows\\FileHistory\\FileHistory*",
+        "\\Microsoft\\Windows\\Location\\Notifications",
+        "\\Microsoft\\Windows\\Maps\\MapsToastTask",
+        "\\Microsoft\\Windows\\Maps\\MapsUpdateTask",
+        "\\Microsoft\\Windows\\MemoryDiagnostic\\ProcessMemoryDiagnosticEvents",
+        "\\Microsoft\\Windows\\MemoryDiagnostic\\RunFullMemoryDiagnostic",
+        "\\Microsoft\\Windows\\MUI\\LPRemove",
+        "\\Microsoft\\Windows\\Multimedia\\SystemSoundsService",
+        "\\Microsoft\\Windows\\OfflineFiles\\BackgroundSynchronization",
+        "\\Microsoft\\Windows\\Printing\\EduPrintProv",
+        "\\Microsoft\\Windows\\Printing\\PrinterCleanupTask",
+        "\\Microsoft\\Windows\\PushToInstall\\Registration",
+        "\\Microsoft\\Windows\\RetailDemo\\CleanupOfflineContent",
+        "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup",
+        "\\Microsoft\\Windows\\Setup\\SetupCleanupTask",
+        "\\Microsoft\\Windows\\SharedPC\\AccountCleanup",
+        "\\Microsoft\\Windows\\UNP\\RunUpdateNotificationMgr",
+        "\\Microsoft\\Windows\\WindowsErrorReporting\\QueueReporting"
+      ],
+      "Description": "Servizi diagnostici generici legati a raccolta dati e debugging."
     }
   ]
 }
